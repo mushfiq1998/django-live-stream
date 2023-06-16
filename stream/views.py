@@ -33,7 +33,8 @@ def Home(request):
 class VideoCamera(object):
     def __init__(self):
         # self.video = cv2.VideoCapture("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
-        youtube_url = 'https://www.youtube.com/watch?v=NMsAKQI9Cbc'
+        # youtube_url = 'https://www.youtube.com/watch?v=NMsAKQI9Cbc'
+        youtube_url = 'https://www.youtube.com/watch?v=iBomaK2ARyI'
         self.video = cap_from_youtube(youtube_url, '720p')
         
         (self.grabbed, self.frame) = self.video.read()
